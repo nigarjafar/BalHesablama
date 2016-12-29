@@ -27,21 +27,21 @@ $( document ).ready(function() {
     			break;
     	}
 
-    	$(".mark").remove()
+    	$(".final-mark").empty()
     	if( Math.ceil(finalMark)>100){
-    		$("body").append( 
-    "<div class='col-md-4 col-md-offset-4 text-center mark'><h1>Sizin "+radio+" almağınız mümkün deyil. </h1></div>" );
+    		$(".final-mark").append( 
+    "<h1>Sizin "+radio+" almağınız mümkün deyil. </h1>" );
     	}
 
     	else{
     		if(finalMark<34)
     			finalMark=34;
-    		$("body").append( 
-    "<div class='col-md-4 col-md-offset-4 text-center mark'><h3>"+radio+" üçün finalda toplamalı olduğunuz minimum bal:<h1>"+Math.ceil(finalMark)+"</h1></div>" );
+    		$(".final-mark").append( 
+    "<h3>"+radio+" üçün finalda toplamalı olduğunuz minimum bal:<h1>"+Math.ceil(finalMark)+"</h1>" );
     	}
 
 
-	    	
+	    $(".final-mark").show();
     })
    
     

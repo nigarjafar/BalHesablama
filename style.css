@@ -7,7 +7,8 @@
 	margin:0 0 20px;
 	border-bottom:1px solid darkgray;
 }
-.mark{
+.final-mark{
 	border:1px solid darkgray;
 	margin-top:30px;
+	background: #fbf5f3;
 }
