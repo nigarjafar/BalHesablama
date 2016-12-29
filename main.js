@@ -1,6 +1,4 @@
 $( document ).ready(function() {
-	console.log("Hello")
-    
 
     $("#avg-form").submit(function(e){
     	e.preventDefault();
@@ -8,8 +6,7 @@ $( document ).ready(function() {
 	    var msdf= $("#msdf").val();
 	    var ff= $("#ff").val();
 	 	var radio=$("input[name='optradio']:checked").val();
-	    console.log(sdi+" "+msdf+" "+ff+" "+radio)
-	   
+	 
     	var avgBeforeFin= sdi*0.2+msdf*0.2+ff*0.1;
 
     	switch(radio){
@@ -29,8 +26,7 @@ $( document ).ready(function() {
     			finalMark=(50.5-avgBeforeFin)*2;
     			break;
     	}
-    	console.log(avgBeforeFin)
-    	console.log(finalMark)
+
     	$(".mark").remove()
     	if( Math.ceil(finalMark)>100){
     		$("body").append( 
