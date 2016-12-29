@@ -42,6 +42,9 @@ $( document ).ready(function() {
 
 
 	    $(".final-mark").show();
+
+	    var n = $(document).height();
+    	$('html, body').animate({ scrollTop: n }, 50);
     })
    
     
