@@ -1,3 +1,7 @@
+.body{
+	padding-top:30px;
+	padding-bottom:30px;
+}
 #form{
 	border:1px solid darkgray;
 	margin-top:50px;
@@ -9,6 +13,6 @@
 }
 .final-mark{
 	border:1px solid darkgray;
-	margin:30px 0;
+	margin-top:30px;
 	background: #fbf5f3;
 }
